@@ -39,7 +39,7 @@ let serverHostName = localCanonicalHostName
 let myCanonicalHostName () =
   if !Trace.runningasserver then serverHostName else Prefs.read clientHostName
 
-let tempFilePrefix = ".unison."
+let tempFilePrefix = "_unison."
 let tempFileSuffixFixed = ".unison.tmp"
 let tempFileSuffix = ref tempFileSuffixFixed
 let includeInTempNames s =
